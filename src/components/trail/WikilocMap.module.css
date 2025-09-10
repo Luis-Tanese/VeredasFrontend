@@ -1,0 +1,9 @@
+.mapContainer {
+    width: 100%;
+}
+
+.responsiveIframe {
+    width: 100%;
+    border: none;
+    display: block;
+}

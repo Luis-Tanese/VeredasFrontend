@@ -1,0 +1,15 @@
+.downloadOption {
+    display: block;
+    width: 100%;
+    padding: var(--mantine-spacing-md);
+    border-radius: var(--mantine-radius-md);
+    border: 1px solid var(--mantine-color-gray-3);
+    text-decoration: none;
+    color: inherit;
+
+    transition: background-color 150ms ease;
+}
+
+.downloadOption:hover {
+    background-color: var(--mantine-color-gray-0);
+}

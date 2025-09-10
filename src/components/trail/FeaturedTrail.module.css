@@ -1,0 +1,31 @@
+.heroWrapper {
+    height: 400px;
+    @media (min-width: 48em) {
+        height: 600px;
+    }
+}
+
+.heroTitle {
+    font-size: 1.75rem;
+    @media (min-width: 48em) {
+        font-size: 3rem;
+    }
+}
+
+.heroText {
+    font-size: var(--mantine-font-size-md);
+    margin-bottom: var(--mantine-spacing-md);
+    @media (min-width: 48em) {
+        font-size: var(--mantine-font-size-xl);
+        margin-bottom: var(--mantine-spacing-xl);
+    }
+}
+
+.heroButton {
+    padding: 0.5rem 1.25rem;
+    font-size: var(--mantine-font-size-md);
+    @media (min-width: 48em) {
+        padding: 0.1rem 2.875rem;
+        font-size: var(--mantine-font-size-xl);
+    }
+}

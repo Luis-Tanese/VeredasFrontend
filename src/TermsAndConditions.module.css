@@ -1,0 +1,33 @@
+.termsBox {
+    font-family: "Cascadia Code", monospace;
+    font-size: var(--mantine-font-size-sm);
+    padding: var(--mantine-spacing-md);
+    background-color: #cce6e6;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-height: 70vh;
+    overflow-y: auto;
+    text-align: justify;
+    scrollbar-width: thin !important;
+    scrollbar-color: #8b857b #f8f7f4 !important;
+}
+
+.termsBox::-webkit-scrollbar {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.termsBox::-webkit-scrollbar-track {
+    background: #f8f7f4 !important;
+}
+
+.termsBox::-webkit-scrollbar-thumb {
+    background-color: #8b857b !important;
+    border-radius: 20px !important;
+    border: 2px solid #f8f7f4 !important;
+}
+
+.termsBox::-webkit-scrollbar-thumb:hover {
+    background-color: #5c5851 !important;
+}

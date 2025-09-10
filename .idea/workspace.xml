@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee1b1888-1c66-4dfe-a34a-d72af585b40d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/cat-activity.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/veredas-frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codebase.mmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Batoon.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Lato-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Lato-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Lato-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/ErrorBoundary.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Header.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Layout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/ProtectedRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/FeaturedTrail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/ImageCarousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/RecentReviewsCarousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/ReviewCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/ReviewCard.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/ReviewForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/TrailCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/TrailCard.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/TrailCardSkeleton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/TrailGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/WikilocMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/trail/WikilocMap.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/ProfileEditModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/ProfileHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/user/ProfileTabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/useAuthStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/AboutPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/LoginPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/NotFoundPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/ProfilePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/RegisterPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/TrailDetailPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/TrailDetailPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/apiClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/authService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/reviewService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/trailService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/userService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="32LqSUinWfjHOvs67X6pTjMtTGG" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.App.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/tanese/Documents/testerson",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/home/tanese/WebstormProjects/veredas-frontend/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/tanese/WebStorm-251.26927.40/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee1b1888-1c66-4dfe-a34a-d72af585b40d" name="Changes" comment="" />
+      <created>1757210201707</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757210201707</updated>
+      <workItem from="1757210203874" duration="713000" />
+      <workItem from="1757211031082" duration="17620000" />
+      <workItem from="1757267627093" duration="7087000" />
+      <workItem from="1757368581004" duration="69000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

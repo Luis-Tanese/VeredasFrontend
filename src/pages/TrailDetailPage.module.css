@@ -1,0 +1,5 @@
+.stickyMapContainer {
+    position: sticky;
+    top: 76px;
+    align-self: flex-start;
+}

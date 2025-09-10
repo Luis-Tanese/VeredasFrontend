@@ -1,0 +1,21 @@
+.card {
+    position: relative;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--mantine-shadow-md);
+}
+
+.rating {
+    position: absolute;
+    top: var(--mantine-spacing-sm);
+    left: var(--mantine-spacing-sm);
+    pointer-events: none;
+    z-index: 1;
+}

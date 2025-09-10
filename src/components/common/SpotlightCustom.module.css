@@ -1,0 +1,13 @@
+.actionCustom {
+    border: 1px solid transparent;
+    transition:
+        background-color 150ms ease,
+        border-color 150ms ease;
+}
+
+.actionCustom:hover,
+.actionCustom[data-selected] {
+    background-color: #0b8185;
+    color: #f8f7f4;
+    border-color: #0b8185;
+}

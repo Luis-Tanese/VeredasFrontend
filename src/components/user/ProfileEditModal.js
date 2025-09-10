@@ -31,7 +31,16 @@ const ProfileEditModal = ({ user, opened, onClose, onProfileSubmit, onPasswordSu
 
     const handleProfileSubmit = (values) => {
         setProfileError(null);
-        onProfileSubmit(values, (err) => {
+
+        const payload = {};
+
+        Object.keys(values).forEach((key) => {
+            if (values[key] && values[key].trim() !== "") {
+                payload[key] = values[key];
+            }
+        });
+
+        onProfileSubmit(payload, (err) => {
             let errorMessage = "Ocorreu um erro.";
             if (err.errorCode && err.errorCode.errors && Array.isArray(err.errorCode.errors)) {
                 errorMessage = err.errorCode.errors.join(", ");
@@ -41,6 +50,7 @@ const ProfileEditModal = ({ user, opened, onClose, onProfileSubmit, onPasswordSu
             setProfileError(errorMessage);
         });
     };
+
 
     const handlePasswordSubmit = (values) => {
         setPasswordError(null);

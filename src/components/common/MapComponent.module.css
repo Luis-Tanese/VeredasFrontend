@@ -10,12 +10,11 @@
     border-radius: var(--mantine-radius-md);
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .mapContainer {
         height: 350px;
     }
-    
+
     .mapIframe {
         height: 350px !important;
     }
@@ -25,7 +24,7 @@
     .mapContainer {
         height: 300px;
     }
-    
+
     .mapIframe {
         height: 300px !important;
     }

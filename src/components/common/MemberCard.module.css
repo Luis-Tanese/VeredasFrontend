@@ -1,0 +1,28 @@
+.memberCard {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.memberCard:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--mantine-shadow-md);
+}
+
+.avatar {
+    flex-shrink: 0;
+}
+
+.memberInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
+.memberName {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.roleBadge {
+    width: fit-content;
+}

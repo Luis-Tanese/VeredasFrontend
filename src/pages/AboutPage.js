@@ -1,9 +1,90 @@
-import { Container, Title, Text, Paper, Stack } from "@mantine/core";
+import { Container, Title, Text, Paper, Stack, SimpleGrid } from "@mantine/core";
+import MemberCard from "../components/common/MemberCard";
+import MapComponent from "../components/common/MapComponent";
+
+import Marco from "../assets/marco.jpg";
+import Enzo from "../assets/enzo.jpg";
+import Mateus from "../assets/mateus.jpg";
+import Jefferson from "../assets/jefferson.jpg";
+import Oliveira from "../assets/oliveira.jpg";
 
 const AboutPage = () => {
+    const teamMembers = [
+        {
+            id: 1,
+            name: "Luis Tanese",
+            role: "Desenvolvedor Back-End",
+            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            badgeColor: "blue",
+        },
+        {
+            id: 2,
+            name: "Marco Paiva",
+            role: "Designer UX/UI",
+            photo: Marco,
+            badgeColor: "green",
+        },
+        {
+            id: 3,
+            name: "Fabricio Kolling",
+            role: "Desenvolvedor Front-End",
+            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            badgeColor: "red",
+        },
+        {
+            id: 4,
+            name: "Mateus Foltran",
+            role: "Desenvolvedor Back-End",
+            photo: Mateus,
+            badgeColor: "blue",
+        },
+        {
+            id: 5,
+            name: "Enzo Lourenço",
+            role: "Designer UX/UI",
+            photo: Enzo,
+            badgeColor: "green",
+        },
+        {
+            id: 6,
+            name: "Gabriel Trevisan",
+            role: "Desenvolvedor Front-End",
+            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            badgeColor: "red",
+        },
+        {
+            id: 7,
+            name: "Jefferson Luiz",
+            role: "Designer UX/UI",
+            photo: Jefferson,
+            badgeColor: "green",
+        },
+        {
+            id: 8,
+            name: "Gabriel Oliveira",
+            role: "Desenvolvedor Front-End",
+            photo: Oliveira,
+            badgeColor: "red",
+        },
+        {
+            id: 9,
+            name: "Maria Clara",
+            role: "Designer UX/UI",
+            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            badgeColor: "green",
+        },
+        {
+            id: 10,
+            name: "Matheus de Souza",
+            role: "Desenvolvedor Front-End",
+            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            badgeColor: "red",
+        },
+    ];
+
     return (
         <>
-            <Container size="md" my="xl">
+            <Container size="lg" my="xl">
                 <Stack gap="xl">
                     <Title order={1} ta="center">
                         Sobre Veredas
@@ -25,15 +106,29 @@ const AboutPage = () => {
                     </Paper>
 
                     <Paper withBorder p="xl" radius="md">
-                        <Title order={3} mb="md">
+                        <Title order={3} mb="lg">
                             Nossa Equipe
                         </Title>
-                        <Text>
+                        <Text mb="xl">
                             Somos um grupo de entusiastas da tecnologia e amantes da natureza, dedicados a construir uma
                             ferramenta que seja ao mesmo tempo poderosa e fácil de usar. Acreditamos que a melhor forma
                             de proteger nossas paisagens naturais é incentivando as pessoas a conhecê-las e amá-las.
                         </Text>
+
+                        <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="lg">
+                            {teamMembers.map((member) => (
+                                <MemberCard
+                                    key={member.id}
+                                    name={member.name}
+                                    role={member.role}
+                                    photo={member.photo}
+                                    badgeColor={member.badgeColor}
+                                />
+                            ))}
+                        </SimpleGrid>
                     </Paper>
+
+                    <MapComponent />
                 </Stack>
             </Container>
         </>

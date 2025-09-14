@@ -19,3 +19,10 @@
     pointer-events: none;
     z-index: 1;
 }
+
+.favoriteIcon {
+    position: absolute;
+    top: var(--mantine-spacing-sm);
+    right: var(--mantine-spacing-sm);
+    z-index: 2;
+}

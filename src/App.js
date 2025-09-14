@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import Layout from "./components/common/Layout";
 import ProtectedRoute from "./components/common/ProtectedRoute";
 import PageTransition from "./components/common/PageTransition";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 // Pages
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -31,6 +32,7 @@ const App = () => {
 
     return (
         <Layout>
+            <ScrollToTop />
             <AnimatePresence mode="wait">
                 <Routes location={location} key={location.pathname}>
                     <Route

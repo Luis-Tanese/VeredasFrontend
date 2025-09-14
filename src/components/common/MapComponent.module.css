@@ -1,0 +1,31 @@
+.mapContainer {
+    width: 100%;
+    border-radius: var(--mantine-radius-md);
+    overflow: hidden;
+    box-shadow: var(--mantine-shadow-sm);
+}
+
+.mapIframe {
+    display: block;
+    border-radius: var(--mantine-radius-md);
+}
+
+@media (max-width: 768px) {
+    .mapContainer {
+        height: 350px;
+    }
+
+    .mapIframe {
+        height: 350px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapContainer {
+        height: 300px;
+    }
+
+    .mapIframe {
+        height: 300px !important;
+    }
+}

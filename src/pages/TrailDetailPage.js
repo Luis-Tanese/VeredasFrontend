@@ -12,7 +12,6 @@ import useAuthStore from "../contexts/useAuthStore";
 import {
     Container,
     Grid,
-    SimpleGrid,
     Title,
     Text,
     Badge,
@@ -32,9 +31,6 @@ import {
 } from "@mantine/core";
 import {
     IconMapPin,
-    IconRulerMeasure,
-    IconArrowUpRight,
-    IconClock,
     IconAlertCircle,
     IconPencil,
     IconPlus,
@@ -50,24 +46,12 @@ import ReviewCard from "../components/trail/ReviewCard";
 import ReviewForm from "../components/trail/ReviewForm";
 import ImageCarousel from "../components/trail/ImageCarousel";
 import AuthorCard from "../components/trail/AuthorCard";
+import FavoritedBy from "../components/trail/FavoritedBy";
+import StatsGrid from "../components/trail/StatsGrid";
 import classes from "./TrailDetailPage.module.css";
 import { getDifficultyColors } from "../utils/styleUtils";
 import downloadClasses from "./DownloadModal.module.css";
 import InteractiveElement from "../components/common/InteractiveElement";
-
-const StatCard = ({ icon, label, value }) => (
-    <Paper withBorder p="md" radius="md">
-        <Group>
-            {icon}
-            <div>
-                <Text c="dimmed" size="xs">
-                    {label}
-                </Text>
-                <Text fw={500}>{value}</Text>
-            </div>
-        </Group>
-    </Paper>
-);
 
 const TrailDetailPage = () => {
     const { id } = useParams();
@@ -311,15 +295,9 @@ const TrailDetailPage = () => {
                                 </Badge>
                             </Group>
 
-                            <SimpleGrid cols={{ base: 1, sm: 2, lg: 4 }} mt="md">
-                                <StatCard icon={<IconRulerMeasure />} label="Distância" value={trail.stats.distance} />
-                                <StatCard
-                                    icon={<IconArrowUpRight />}
-                                    label="Ganho de Elevação"
-                                    value={trail.stats.elevationGain}
-                                />
-                                <StatCard icon={<IconClock />} label="Duração Média" value={trail.duration} />
-                            </SimpleGrid>
+                            <StatsGrid stats={trail.stats} duration={trail.duration} />
+
+                            <FavoritedBy favorites={trail.favorites} />
 
                             {isMobile && (
                                 <Box mt="xl">

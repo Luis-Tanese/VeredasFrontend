@@ -2,11 +2,15 @@ import { Container, Title, Text, Paper, Stack, SimpleGrid } from "@mantine/core"
 import MemberCard from "../components/common/MemberCard";
 import MapComponent from "../components/common/MapComponent";
 
+import Tanese from "../assets/tanese.png";
 import Marco from "../assets/marco.jpg";
 import Enzo from "../assets/enzo.jpg";
 import Mateus from "../assets/mateus.jpg";
 import Jefferson from "../assets/jefferson.jpg";
 import Oliveira from "../assets/oliveira.jpg";
+import Matheus from "../assets/matheus.jpg";
+import Fabricio from "../assets/fabricio.png";
+import Trevisan from "../assets/trevisan.png";
 
 const AboutPage = () => {
     const teamMembers = [
@@ -14,7 +18,7 @@ const AboutPage = () => {
             id: 1,
             name: "Luis Tanese",
             role: "Desenvolvedor Back-End",
-            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            photo: Tanese,
             badgeColor: "blue",
         },
         {
@@ -28,7 +32,7 @@ const AboutPage = () => {
             id: 3,
             name: "Fabricio Kolling",
             role: "Desenvolvedor Front-End",
-            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            photo: Fabricio,
             badgeColor: "red",
         },
         {
@@ -49,7 +53,7 @@ const AboutPage = () => {
             id: 6,
             name: "Gabriel Trevisan",
             role: "Desenvolvedor Front-End",
-            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            photo: Trevisan,
             badgeColor: "red",
         },
         {
@@ -77,7 +81,7 @@ const AboutPage = () => {
             id: 10,
             name: "Matheus de Souza",
             role: "Desenvolvedor Front-End",
-            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            photo: Matheus,
             badgeColor: "red",
         },
     ];

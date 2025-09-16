@@ -11,6 +11,7 @@ import Oliveira from "../assets/oliveira.jpg";
 import Matheus from "../assets/matheus.jpg";
 import Fabricio from "../assets/fabricio.png";
 import Trevisan from "../assets/trevisan.png";
+import Maria from "../assets/maria.webp";
 
 const AboutPage = () => {
     const teamMembers = [
@@ -74,7 +75,7 @@ const AboutPage = () => {
             id: 9,
             name: "Maria Clara",
             role: "Designer UX/UI",
-            photo: "https://images.unsplash.com/photo-1494790108755-2616b86fb49b?w=150&h=150&fit=crop&crop=face",
+            photo: Maria,
             badgeColor: "green",
         },
         {

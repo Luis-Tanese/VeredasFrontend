@@ -1,27 +1,21 @@
 import { Paper, Group, Avatar, Text, Badge } from "@mantine/core";
 import styles from "./MemberCard.module.css";
 
-const MemberCard = ({ name, role, photo, badgeColor }) => {
+const MemberCard = ({ name, role, photo, badgeColor, githubProfile }) => {
     return (
-        <Paper withBorder p="md" radius="md" className={styles.memberCard}>
+        <Paper
+            withBorder
+            p="md"
+            radius="md"
+            className={githubProfile ? `${styles.memberCard} ${styles.clickable}` : styles.memberCard}
+        >
             <Group gap="md" align="center">
-                <Avatar
-                    src={photo}
-                    alt={`${name} photo`}
-                    size="lg"
-                    radius="md"
-                    className={styles.avatar}
-                />
+                <Avatar src={photo} alt={`${name} photo`} size="lg" radius="md" className={styles.avatar} />
                 <div className={styles.memberInfo}>
                     <Text fw={600} size="lg" className={styles.memberName}>
                         {name}
                     </Text>
-                    <Badge
-                        color={badgeColor}
-                        variant="light"
-                        size="md"
-                        className={styles.roleBadge}
-                    >
+                    <Badge color={badgeColor} variant="light" size="md" className={styles.roleBadge}>
                         {role}
                     </Badge>
                 </div>

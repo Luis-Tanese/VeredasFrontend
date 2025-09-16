@@ -21,6 +21,7 @@ const AboutPage = () => {
             role: "Desenvolvedor Back-End",
             photo: Tanese,
             badgeColor: "blue",
+            githubProfile: "https://github.com/Luis-Tanese",
         },
         {
             id: 2,
@@ -28,6 +29,7 @@ const AboutPage = () => {
             role: "Designer UX/UI",
             photo: Marco,
             badgeColor: "green",
+            githubProfile: null,
         },
         {
             id: 3,
@@ -35,6 +37,7 @@ const AboutPage = () => {
             role: "Desenvolvedor Front-End",
             photo: Fabricio,
             badgeColor: "red",
+            githubProfile: "https://github.com/FabricioKolling",
         },
         {
             id: 4,
@@ -42,6 +45,7 @@ const AboutPage = () => {
             role: "Desenvolvedor Back-End",
             photo: Mateus,
             badgeColor: "blue",
+            githubProfile: "https://github.com/MateusFoltranTomaz",
         },
         {
             id: 5,
@@ -49,6 +53,7 @@ const AboutPage = () => {
             role: "Designer UX/UI",
             photo: Enzo,
             badgeColor: "green",
+            githubProfile: null,
         },
         {
             id: 6,
@@ -56,6 +61,7 @@ const AboutPage = () => {
             role: "Desenvolvedor Front-End",
             photo: Trevisan,
             badgeColor: "red",
+            githubProfile: "https://github.com/gTrevisanz",
         },
         {
             id: 7,
@@ -63,6 +69,7 @@ const AboutPage = () => {
             role: "Designer UX/UI",
             photo: Jefferson,
             badgeColor: "green",
+            githubProfile: null,
         },
         {
             id: 8,
@@ -70,6 +77,7 @@ const AboutPage = () => {
             role: "Desenvolvedor Front-End",
             photo: Oliveira,
             badgeColor: "red",
+            githubProfile: null,
         },
         {
             id: 9,
@@ -77,6 +85,7 @@ const AboutPage = () => {
             role: "Designer UX/UI",
             photo: Maria,
             badgeColor: "green",
+            githubProfile: null,
         },
         {
             id: 10,
@@ -84,6 +93,7 @@ const AboutPage = () => {
             role: "Desenvolvedor Front-End",
             photo: Matheus,
             badgeColor: "red",
+            githubProfile: "https://github.com/matheussouzabsilveira",
         },
     ];
 
@@ -121,15 +131,34 @@ const AboutPage = () => {
                         </Text>
 
                         <SimpleGrid cols={{ base: 1, sm: 2, lg: 3 }} spacing="lg">
-                            {teamMembers.map((member) => (
-                                <MemberCard
-                                    key={member.id}
-                                    name={member.name}
-                                    role={member.role}
-                                    photo={member.photo}
-                                    badgeColor={member.badgeColor}
-                                />
-                            ))}
+                            {teamMembers.map((member) =>
+                                member.githubProfile ? (
+                                    <a
+                                        href={member.githubProfile}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ textDecoration: "none", color: "inherit" }}
+                                        key={member.id}
+                                    >
+                                        <MemberCard
+                                            name={member.name}
+                                            role={member.role}
+                                            photo={member.photo}
+                                            badgeColor={member.badgeColor}
+                                            githubProfile={member.githubProfile}
+                                        />
+                                    </a>
+                                ) : (
+                                    <MemberCard
+                                        key={member.id}
+                                        name={member.name}
+                                        role={member.role}
+                                        photo={member.photo}
+                                        badgeColor={member.badgeColor}
+                                        githubProfile={member.githubProfile}
+                                    />
+                                )
+                            )}
                         </SimpleGrid>
                     </Paper>
 

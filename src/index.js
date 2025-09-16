@@ -11,66 +11,66 @@ import "@mantine/carousel/styles.css";
 import "@mantine/core/styles.css";
 import "@mantine/notifications/styles.css";
 import "@mantine/spotlight/styles.css";
+import "./index.css";
 
 import App from "./App";
-import "./index.css";
 
 const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <ErrorBoundary>
-            <QueryClientProvider client={queryClient}>
-                <BrowserRouter>
-                    <MantineProvider
-                        withGlobalStyles
-                        withNormalizeCSS
-                        theme={{
-                            colors: {
-                                brand: [
-                                    "#e6f2f2",
-                                    "#cce6e6",
-                                    "#99cdce",
-                                    "#66b4b5",
-                                    "#339ca2",
-                                    "#1f8d91",
-                                    "#0B8185",
-                                    "#086f73",
-                                    "#066063",
-                                    "#035052",
-                                ],
-                                earth: [
-                                    "#F8F7F4",
-                                    "#EAE8E1",
-                                    "#D2CEC3",
-                                    "#8B857B",
-                                    "#5C5851",
-                                    "#3B3934",
-                                    "#2C2A26",
-                                    "#1F1E1B",
-                                    "#141311",
-                                    "#0A0908",
-                                ],
-                            },
-                            primaryColor: "brand",
-                            colorScheme: "light",
-                            defaultGradient: { from: "brand", to: "teal", deg: 45 },
-                            black: "#3B3934",
-                            white: "#F8F7F4",
-                            headings: {
-                                fontFamily: "Batoon, sans-serif",
-                                fontWeight: "normal",
-                            },
-                        }}
-                    >
-                        <Notifications />
-                        <ModalsProvider>
+        <QueryClientProvider client={queryClient}>
+            <BrowserRouter>
+                <MantineProvider
+                    withGlobalStyles
+                    withNormalizeCSS
+                    theme={{
+                        colors: {
+                            brand: [
+                                "#e6f2f2",
+                                "#cce6e6",
+                                "#99cdce",
+                                "#66b4b5",
+                                "#339ca2",
+                                "#1f8d91",
+                                "#0B8185",
+                                "#086f73",
+                                "#066063",
+                                "#035052",
+                            ],
+                            earth: [
+                                "#F8F7F4",
+                                "#EAE8E1",
+                                "#D2CEC3",
+                                "#8B857B",
+                                "#5C5851",
+                                "#3B3934",
+                                "#2C2A26",
+                                "#1F1E1B",
+                                "#141311",
+                                "#0A0908",
+                            ],
+                        },
+                        primaryColor: "brand",
+                        colorScheme: "light",
+                        defaultGradient: { from: "brand", to: "teal", deg: 45 },
+                        black: "#3B3934",
+                        white: "#F8F7F4",
+                        headings: {
+                            fontFamily: "Batoon, sans-serif",
+                            fontWeight: "normal",
+                        },
+                    }}
+                >
+                    <Notifications />
+                    <ModalsProvider>
+                        <ErrorBoundary>
                             <App />
-                        </ModalsProvider>
-                    </MantineProvider>
-                </BrowserRouter>
-            </QueryClientProvider>
-        </ErrorBoundary>
+                        </ErrorBoundary>
+                    </ModalsProvider>
+                </MantineProvider>
+            </BrowserRouter>
+        </QueryClientProvider>
     </React.StrictMode>
 );

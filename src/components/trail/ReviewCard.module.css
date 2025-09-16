@@ -1,15 +1,44 @@
-.fullHeight {
+.cardContainer {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.reviewText {
+.cardStack {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.textContainer {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.textContainerFull {
+    flex: 1;
+}
+
+.clampedText {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    line-clamp: 3;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    flex-grow: 1;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.fullText {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.trailLink {
+    margin-top: auto;
+    flex-shrink: 0;
 }

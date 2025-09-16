@@ -50,7 +50,7 @@ const RecentReviewsCarousel = () => {
                 align="start"
                 styles={{
                     control: {
-                        "&[data-inactive]": { opacity: 0, cursor: "default" },
+                        "&[dataInactive]": { opacity: 0, cursor: "default" },
                         top: "calc(50% - 15px)",
                     },
                 }}

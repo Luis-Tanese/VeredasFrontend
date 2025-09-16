@@ -48,6 +48,15 @@ const ImageCarousel = ({ images }) => {
                 slidesToScroll={isMobile ? 1 : 3}
                 withIndicators
                 loop
+                styles={{
+                    control: {
+                        "&[dataInactive]": { opacity: 0, cursor: "default" },
+                        backgroundColor: "white",
+                        "&[dataActive]": {
+                            backgroundColor: "white",
+                        },
+                    },
+                }}
             >
                 {slides}
             </Carousel>

@@ -1,7 +1,8 @@
-import { Paper, Group, Avatar, Text, Rating, Stack, ActionIcon, Menu } from "@mantine/core";
+import { Paper, Group, Avatar, Text, Rating, Stack, ActionIcon, Menu, Box } from "@mantine/core";
 import { Link } from "react-router-dom";
 import { IconDots, IconEdit, IconTrash } from "@tabler/icons-react";
 import useAuthStore from "../../contexts/useAuthStore";
+import classes from "./ReviewCard.module.css";
 
 const ReviewCard = ({ review, onEdit, onDelete, lineClamp }) => {
     const { user } = useAuthStore();
@@ -13,8 +14,8 @@ const ReviewCard = ({ review, onEdit, onDelete, lineClamp }) => {
     const canManage = isOwner && onEdit && onDelete;
 
     return (
-        <Paper withBorder p="md" radius="md" style={{ height: "100%" }}>
-            <Stack style={{ height: "100%" }}>
+        <Paper withBorder p="md" radius="md" className={classes.cardContainer}>
+            <Stack className={classes.cardStack}>
                 <Group justify="space-between">
                     <Group>
                         <Avatar src={userProfilePic} radius="xl">
@@ -54,13 +55,21 @@ const ReviewCard = ({ review, onEdit, onDelete, lineClamp }) => {
 
                 <Rating value={rating} fractions={2} readOnly />
 
-                <Text size="sm" c="earth.4" lineClamp={lineClamp} style={{ flexGrow: 1 }}>
-                    {reviewText}
-                </Text>
+                <Box className={lineClamp ? classes.textContainer : classes.textContainerFull}>
+                    <Text
+                        size="sm"
+                        c="earth.4"
+                        className={lineClamp ? classes.clampedText : classes.fullText}
+                        style={{
+                            WebkitLineClamp: lineClamp || "unset",
+                        }}
+                    >
+                        {reviewText}
+                    </Text>
+                </Box>
 
                 {trailName && (
-                    <Text size="xs" mt="auto">
-                        {" "}
+                    <Text size="xs" mt="auto" className={classes.trailLink}>
                         Em:{" "}
                         <Text component={Link} to={`/trilha/${trailId}`} variant="link" inherit>
                             {trailName}

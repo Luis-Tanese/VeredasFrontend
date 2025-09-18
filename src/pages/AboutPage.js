@@ -29,7 +29,7 @@ const AboutPage = () => {
             role: "Designer UX/UI",
             photo: Marco,
             badgeColor: "green",
-            githubProfile: null,
+            githubProfile: "https://github.com/Marc0Antonio",
         },
         {
             id: 3,
@@ -69,7 +69,7 @@ const AboutPage = () => {
             role: "Designer UX/UI",
             photo: Jefferson,
             badgeColor: "green",
-            githubProfile: null,
+            githubProfile: "https://github.com/jeff0proprio",
         },
         {
             id: 8,
@@ -77,7 +77,7 @@ const AboutPage = () => {
             role: "Desenvolvedor Front-End",
             photo: Oliveira,
             badgeColor: "red",
-            githubProfile: null,
+            githubProfile: "https://github.com/olliveira-gabriel",
         },
         {
             id: 9,

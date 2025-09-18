@@ -18,7 +18,7 @@ const FeaturedTrail = () => {
     });
 
     if (isLoading) {
-        return <Skeleton height={{ base: 350, sm: 400 }} />;
+        return <Skeleton className={classes.heroWrapper} />;
     }
 
     if (isError || !trail || !trail.images || trail.images.length === 0) {

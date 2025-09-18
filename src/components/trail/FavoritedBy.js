@@ -1,6 +1,6 @@
 import { Avatar, Tooltip, Text, Group, Box } from "@mantine/core";
 
-const FavoritedBy = ({ favorites, maxVisible = 5 }) => {
+const FavoritedBy = ({ favorites, maxVisible = 3 }) => {
     if (!favorites || favorites.length === 0) {
         return null;
     }

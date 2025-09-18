@@ -78,23 +78,45 @@ const TrailDetailPage = () => {
     const { mutate: handleToggleFavorite, isPending: isFavoriting } = useMutation({
         mutationFn: toggleFavorite,
         onMutate: async (trailId) => {
+            await queryClient.cancelQueries({ queryKey: ["trail", id] });
             await queryClient.cancelQueries({ queryKey: ["user"] });
+
             const previousUser = queryClient.getQueryData(["user"]);
+            const previousTrail = queryClient.getQueryData(["trail", id]);
+
             const isCurrentlyFavorited = user.favorites.includes(trailId);
             const newFavorites = isCurrentlyFavorited
                 ? user.favorites.filter((favId) => favId !== trailId)
                 : [...user.favorites, trailId];
             updateUser({ ...user, favorites: newFavorites });
-            return { previousUser };
+
+            if (previousTrail) {
+                const newTrailFavorites = isCurrentlyFavorited
+                    ? previousTrail.favorites.filter((fav) => fav.userId !== user._id)
+                    : [
+                          ...previousTrail.favorites,
+                          { userId: user._id, username: user.username, profilePicUrl: user.profilePicUrl },
+                      ];
+
+                queryClient.setQueryData(["trail", id], {
+                    ...previousTrail,
+                    favorites: newTrailFavorites,
+                });
+            }
+
+            return { previousUser, previousTrail };
         },
         onError: (err, trailId, context) => {
             if (context.previousUser) {
                 updateUser(context.previousUser);
             }
+            if (context.previousTrail) {
+                queryClient.setQueryData(["trail", id], context.previousTrail);
+            }
         },
         onSettled: () => {
             queryClient.invalidateQueries({ queryKey: ["user"] });
-            queryClient.invalidateQueries({ queryKey: ["trails"] });
+            queryClient.invalidateQueries({ queryKey: ["trail", id] });
         },
     });
 

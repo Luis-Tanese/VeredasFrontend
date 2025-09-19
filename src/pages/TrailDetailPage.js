@@ -334,13 +334,13 @@ const TrailDetailPage = () => {
                                 <Title order={4} mb="sm">
                                     Descrição
                                 </Title>
-                                <Text style={{ whiteSpace: "pre-wrap" }}>{trail.description}</Text>
+                                <Text className={classes.texto}>{trail.description}</Text>
                             </Paper>
                             <Paper withBorder p="md" mt="lg">
                                 <Title order={4} mb="sm">
                                     Orientações
                                 </Title>
-                                <Text style={{ whiteSpace: "pre-wrap" }}>{trail.orientations}</Text>
+                                <Text className={classes.texto}>{trail.orientations}</Text>
                             </Paper>
 
                             <Divider my="xl" label="Galeria de Fotos" labelPosition="center" />

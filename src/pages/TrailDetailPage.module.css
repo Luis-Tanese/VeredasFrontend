@@ -3,3 +3,8 @@
     top: 76px;
     align-self: flex-start;
 }
+
+.texto {
+    text-align: justify;
+    white-space: pre-wrap;
+}

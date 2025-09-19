@@ -58,8 +58,8 @@ root.render(
                         black: "#3B3934",
                         white: "#F8F7F4",
                         headings: {
-                            fontFamily: "Batoon, sans-serif",
-                            fontWeight: "normal",
+                            fontFamily: "Poppins, sans-serif",
+                            fontWeight: "bold",
                         },
                     }}
                 >
